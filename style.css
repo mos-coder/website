@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg);
+}
+.nav ul {
+    list-style-type: style auto; ;
+    background-color: #666;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    list-style: none;
+    font-size: 1.2em;
+    text-align: left;
+   
+
+}
+.nav a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    border-bottom: 2px solid #111;
+    padding-left: 12px;
+    transition: .3s;
+
+}
+
+.nav a:hover{
+    background-color: bisque;
+}
+
+.nav a.active{
+    background-color: aquamarine;
+    color: #444;
+    cursor: default;
+    text-align: center;
+}
+.nav li li {
+      font-size: .8em;
+}
+@media screen and (min-width:650px) {
+    .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+
+    }
+    .nav a{
+        border-bottom: none;
+    }
+    .nav > ul > li{
+        text-align: center;
+    }
+    .nav > ul > li > a {
+        padding-left: 0;
+    }
+    .nav li ul {
+        position: absolute;
+        display: none;
+        width:  inherit;
+    }
+    .nav li:hover ul {
+        display: block;
+
+    }
+    .nav li ul li {
+        display: block;
+    }
+    
+}
+.container h1 { 
+          font-size: 150px;
+          text-align: center;
+          color: aliceblue;
+          
+}
+.click{
+    text-align: center;
+   
+}
+.click button{
+    border-radius: 10px;
+    background-color: rgb(116, 87, 87);
+    width: 60px;
+    height: 40px;
+    color: antiquewhite;
+    font-size: 20px;
+
+}
+a:link{
+    text-decoration:none;
+    color: #111;
+}
+a:visited{
+    color: #111;
+    transition: .3s;
+}

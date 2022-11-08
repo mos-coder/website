@@ -1,105 +1,172 @@
 body{
     margin: 0;
     padding: 0;
-    background: #ccc;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg);
+    background: #666;
 }
-.nav ul {
-    list-style-type: style auto; ;
+.navbar{
+    display: flex;
+    border: 1px solid black;
     background-color: #666;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
+    color: #fff;
+    text-transform: uppercase;
 
-.nav li {
-    list-style: none;
-    font-size: 1.2em;
-    text-align: left;
+}
+.logo{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 120%;
+    justify-content: right;
+    align-items: center;
+   list-style: none;
    
-
 }
-.nav a {
+ul li {
+    margin: 0 1rem;
+}
+ul li a{
+    color: #fff;
     text-decoration: none;
-    color: #444;
+}
+header{
+    height: 760.1px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1264&q=80) ;
+}
+
+.header-info{
+    height: 300px;
+    width: 650px;
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #fff;
+
+}
+.header-info a{
     display: block;
-    border-bottom: 2px solid #111;
-    padding-left: 12px;
-    transition: .3s;
-
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    width: 80px;
+    text-decoration: none;
 }
-
-.nav a:hover{
-    background-color: bisque;
+.header-info a:hover{
+    background: #555;
 }
-
-.nav a.active{
-    background-color: aquamarine;
-    color: #444;
-    cursor: default;
+.preteams{
+    border: 1px solid;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 0 0 30px  #EAD6D2;
+    background: url(https://images.unsplash.com/photo-1464263866732-138a1da44860?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBsYW50JTIwZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+     
 }
-.nav li li {
-      font-size: .8em;
+.teams{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid red; */
+    height: 450px;
+ 
+  
 }
-@media screen and (min-width:650px) {
-    .nav li {
-        width: 130px;
-        border-bottom: none;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;
-        display: inline-block;
-        margin-right: -4px;
-
-    }
-    .nav a{
-        border-bottom: none;
-    }
-    .nav > ul > li{
-        text-align: center;
-    }
-    .nav > ul > li > a {
-        padding-left: 0;
-    }
-    .nav li ul {
-        position: absolute;
-        display: none;
-        width:  inherit;
-    }
-    .nav li:hover ul {
-        display: block;
-
-    }
-    .nav li ul li {
-        display: block;
-    }
+.team-item{
     
-}
-.container h1 { 
-          font-size: 150px;
-          text-align: center;
-          color: aliceblue;
-          
-}
-.click{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-   
-}
-.click button{
-    border-radius: 10px;
-    background-color: rgb(116, 87, 87);
-    width: 60px;
-    height: 40px;
-    color: antiquewhite;
+    border: 3px solid white; 
+    background: url(https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    color:#fff;
     font-size: 20px;
 
 }
-a:link{
-    text-decoration:none;
-    color: #111;
+.team-item-2{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid white; 
+    background: url(https://images.unsplash.com/photo-1598662779094-110c2bad80b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1246&q=80);
+    color: #fff;
+    font-size: 20px;
+
 }
-a:visited{
-    color: #111;
-    transition: .3s;
+.team-item-3{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid white; 
+    background: url(https://images.unsplash.com/photo-1584727151652-d09b17ebf23f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1211&q=80);
+    color: #fff;
+    font-size: 20px;
+
 }
+.team-item img {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #000;
+}
+.team-item-2 img {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #000;
+}
+.team-item-3 img {
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #000;
+}
+.team-item a{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+border-radius: 10px;
+
+}
+.team-item a:hover{
+    background: #555;
+}
+.team-item-2 a{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+border-radius: 10px;
+
+}
+.team-item-2 a:hover{
+    background: #555;
+}
+
+.team-item-3 a{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+border-radius: 10px;
+
+}
+.team-item-3 a:hover{
+    background: #555;
+}
+
+
+
+
+
+

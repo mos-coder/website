@@ -35,7 +35,7 @@ ul li {
 ul li a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 80%;
     text-transform: uppercase;
 }
 ul li a:hover{
@@ -59,12 +59,12 @@ header{
    color: aliceblue;
 }
 .header-info h1{
-    font-size: 50px;
+    font-size: 200%;
     text-transform: uppercase;
     text-shadow: 0 0 10px black;
 }
 .header-info p{
-    font-size: 20px;
+    font-size: 90%;
 }
 .header-info p:hover{
     color: black;
@@ -88,13 +88,15 @@ header{
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
  
   
 }
 .team-item{
     /* border: 1px solid red; */
     text-align: center;
-    width: 200px;
+    width: 100%;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -103,91 +105,43 @@ header{
     align-items: center;
     
 }
-.team-item2{
-    /* border: 1px solid red; */
-    text-align: center;
-    width: 200px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    justify-content: center;
-    align-items: center;
-    
-}
-.team-item3{
-    /* border: 1px solid red; */
-    text-align: center;
-    width: 200px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    justify-content: center;
-    align-items: center;
-    
-}
+
+
 .team-item img{
-    width: 150px;
+    width: 40%;
     border-radius: 10px;
     box-shadow:  0 0 10px black;
 }
-.team-item2 img{
-    width: 150px;
-    border-radius: 10px;
-    box-shadow:  0 0 10px black;
-}
-.team-item3 img{
-    width: 150px;
-    border-radius: 10px;
-    box-shadow:  0 0 10px black;
-}
+
 .team-item a{
+   
     background-color:#fff ;
     text-decoration: none;
     color:#666;
     border-radius: 10px;
-    padding: 0 0.5rem;
-    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30%;
     box-shadow: 0 0 10px black;
+    width: 60px;
+   
 }
-.team-item2 a{
-    background-color:#fff ;
-    text-decoration: none;
-    color:#666;
-    border-radius: 10px;
-    padding: 0 0.5rem;
-    font-size: 20px;
-    box-shadow: 0 0 10px black;
-}
-.team-item3 a{
-    background-color:#fff ;
-    text-decoration: none;
-    color:#666;
-    border-radius: 10px;
-    padding: 0 0.5rem;
-    font-size: 20px;
-    box-shadow: 0 0 10px black;
-}
+
+
 .team-item a:hover{
     background: #666;
     color: #000;
     
 }
-.team-item2 a:hover{
-    background: #666;
-    color: #000;
-}
-.team-item3 a:hover{
-    background: #666;
-    color: #000;
-}
+
 .activity{
     border: 1px solid black;
     width: 100%;
     height: 60px;
     background-color: #666;
-    font-size:30px ;
+    font-size:170% ;
+    margin-top: auto;
+    
 }
 .activity h1{
     text-align: center;
@@ -195,7 +149,8 @@ header{
     text-transform: uppercase;
     color: aliceblue;
     text-shadow: 0 0 10px black;
-    
+    justify-content: center;
+    align-items: center;
 }
 .activity-main{
     display: grid;
@@ -318,7 +273,7 @@ header{
 }
 .gmail{
     /* border: 1px solid black; */
-    width: 300px;
+    width: 100%;
     height: 240px;
     margin-left: auto;
     margin-right: auto;
@@ -370,4 +325,91 @@ header{
     border-radius: 10px;
 
 }
+@media only screen and (max-width: 300px) {
+    img{
+        width: 100%;
+        display: grid;
+         justify-content: center;
+         align-items: center;
+       
+        
+    }
+    .teams{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .activity-main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .team-item{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team-item2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team-item3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 60%;
+        text-transform: uppercase;
+    }
 
+}
+@media screen and(max-width: 540px) {
+    .team-item{
+        width: 30%;
+    }
+    .team-item a{
+        text-align: center;
+        align-items: center;
+
+    }
+    .team-item img{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:786px) {
+    .teams{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .teams img{
+        width: 30%;
+    }
+    .teams h1{
+        margin-top: auto;
+    }
+    .activity{
+        margin-top: 10%;
+    }
+
+.activity-main{
+    display: grid;
+    grid-template-columns: 2fr;
+ }
+ .team-item{
+    margin-top: 20px;
+}
+
+    
+    
+}
+@media screen and (max-width:600px){
+    .teams img{
+            width: 40%;
+    }
+    
+
+}

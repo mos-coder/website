@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&family=Sriracha&display=swap');
 body{
     margin: 0;
     padding: 0;
     background-color: bisque;
     background: url(https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
     background-size: cover;
+    font-family: 'Sriracha', cursive;
 }
 .navbar{
     display: flex;
@@ -15,11 +17,7 @@ body{
 
 
 }
-.logo{
-    /* border: 1px solid black; */
-    display: flex;
-    width: 20%;  
-}
+
 
 ul {
     width: 120%;
@@ -31,8 +29,11 @@ ul {
   
 }
 ul li {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 ul li a{
     text-decoration: none;
@@ -64,7 +65,7 @@ header{
    color: aliceblue;
 }
 .header-info h1{
-    font-size: 300%;
+    font-size: 280%;
     text-transform: uppercase;
     text-shadow: 0 0 10px black;
 }

@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: bisque;
+    background: url(https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
 }
 .navbar{
     display: flex;
@@ -38,9 +40,12 @@ ul li a{
     font-size: 80%;
     text-transform: uppercase;
 }
-ul li a:hover{
- color: bisque;
-    
+ul li button{
+    border-radius: 10px;
+}
+ul li button:hover{
+    background-color: #fff;
+    transition: .3s ease-in-out;
 }
 header{
     height: 720.1px;
@@ -59,12 +64,12 @@ header{
    color: aliceblue;
 }
 .header-info h1{
-    font-size: 200%;
+    font-size: 300%;
     text-transform: uppercase;
     text-shadow: 0 0 10px black;
 }
 .header-info p{
-    font-size: 90%;
+    font-size: 100%;
 }
 .header-info p:hover{
     color: black;
@@ -90,11 +95,12 @@ header{
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
  
   
 }
 .team-item{
-    /* border: 1px solid red; */
+     /* border: 1px solid red;  */
     text-align: center;
     width: 100%;
     height: 400px;
@@ -108,6 +114,7 @@ header{
 
 
 .team-item img{
+    /* border: 1px solid black; */
     width: 40%;
     border-radius: 10px;
     box-shadow:  0 0 10px black;
@@ -121,9 +128,10 @@ header{
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    font-size: 30%;
+    font-size: 100%;
     box-shadow: 0 0 10px black;
-    width: 60px;
+    width: 70%;
+    height: 20px;
    
 }
 
@@ -134,197 +142,7 @@ header{
     
 }
 
-.activity{
-    border: 1px solid black;
-    width: 100%;
-    height: 60px;
-    background-color: #666;
-    font-size:170% ;
-    margin-top: auto;
-    
-}
-.activity h1{
-    text-align: center;
-    margin-top: 0;
-    text-transform: uppercase;
-    color: aliceblue;
-    text-shadow: 0 0 10px black;
-    justify-content: center;
-    align-items: center;
-}
-.activity-main{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-}
-.activity-main-item{
-    text-align: center;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #666;
-    box-shadow: 0 0 10px #000;
-    border-radius: 30px;
-    margin-top: 20px;
-}
-.activity-main-item2{text-align: center;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #666;
-    box-shadow: 0 0 10px #000;
-    border-radius: 30px;
-    margin-top: 20px;
-}
-.activity-main-item3{text-align: center;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #666;
-    box-shadow: 0 0 10px #000;
-    border-radius: 30px;
-    margin-top: 20px;
-}
-.activity-main-item4{text-align: center;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #666;
-    box-shadow: 0 0 10px #000;
-    border-radius: 30px;
-    margin-top: 20px;
-}
 
-
-
-.activity-main-item img{
-    width: 270px;
-    border-radius: 10px;
-}
-.activity-main-item2 img{
-    width: 270px;
-    border-radius: 10px;
-}
-.activity-main-item3 img{
-    width: 270px;
-    border-radius: 10px;
-}
-.activity-main-item4 img{
-    width: 270px;
-    border-radius: 10px;
-}
-
-
-
-
-.activity-main-item:hover{
-    background-color: aliceblue;
-}
-.activity-main-item2:hover{
-    background-color: aliceblue;
-}
-.activity-main-item3:hover{
-    background-color: aliceblue;
-}
-.activity-main-item4:hover{
-    background-color: aliceblue;
-}
-.activity-main-item5:hover{
-    background-color: aliceblue;
-}
-
-
-.precontact{
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 60px;
-    background-color: #666;
-    font-size:30px ;
-    margin-top: 20px;
-}
-.precontact h1 {
-    text-align: center;
-    margin-top: 0;
-    text-transform: uppercase;
-    color: aliceblue;
-    text-shadow: 0 0 10px black;
-   
-}
-.contact{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* border: 1px solid black; */
-   width: 100%;
-   height: 300px;
-   text-align: center;
-   
-}
-.gmail{
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 240px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #666;
-    box-shadow: 0 0 10px #000;
-    border-radius: 30px;
-    margin-top: 20px;
-    text-align: center;
-    
-}
-.contact img{
-    margin-top: 30px;
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-.contact a{
-    background-color:#fff ;
-    text-decoration: none;
-    color:#666;
-    border-radius: 10px;
-    padding: 0 0.5rem;
-    font-size: 20px;
-    box-shadow: 0 0 10px black;
-}
-.contact a:hover{
-    background-color: #666;
-    color: #fff;
-   
-}
-.gmail:hover{
-    background-color: #b3b1b1 ;
-}
-#face img {
-    margin-top: 30px;
-    width: 240px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-#inst img{
-    margin-top: 30px;
-    width: 240px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-
-}
 @media only screen and (max-width: 300px) {
     img{
         width: 100%;
@@ -412,4 +230,27 @@ header{
     }
     
 
+}
+@media screen  and (max-width:299px){
+    .team-item {
+       
+       display: grid;
+       grid-template-columns: 1fr;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    .team-item img{
+        
+        
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        height: auto;
+    }
+    .team-item a{
+        margin-left:auto;
+        margin-right:auto ;
+    }
 }

@@ -43,6 +43,7 @@ ul li a{
 }
 ul li button{
     border-radius: 10px;
+    width: 100%;
 }
 ul li button:hover{
     background-color: #fff;

@@ -32,6 +32,7 @@ ul {
 ul li {
     margin: auto;
     padding: 0;
+   
 }
 ul li a{
     text-decoration: none;
@@ -83,4 +84,9 @@ ul li a:hover{
 }
 #column:hover figure:not(:hover){
     opacity: 0.4;
+}
+@media screen  and (max-width:567px){
+    ul li button{
+        width: 40%;
+    }    
 }

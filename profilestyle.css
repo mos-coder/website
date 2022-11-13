@@ -104,3 +104,8 @@ ul li a:hover{
     font-size: 100%;
     font-family: 'Sriracha', cursive;
 }
+@media screen  and (max-width:567px){
+    ul li button{
+        width: 40%;
+    }    
+}
